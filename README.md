@@ -32,7 +32,7 @@ git config --global github.user YOUR_GITHUB_USERNAME
 Simply make symlinks to your checkout of the commands to a folder in your `$PATH`:
 
 ```shell
-cp -s git-ghbranch git-ghfix ~/bin/
+ln -s git-ghbranch git-ghfix ~/bin/
 ``` 
 
 ## Install the GitHub prepare-commit-msg hook 
@@ -40,7 +40,7 @@ cp -s git-ghbranch git-ghfix ~/bin/
 You need to make a a symbol of the custom hook in each project you want to use it in:
 
 ```shell
-cp -s prepare-commit-msg .git/hooks/
+ln -s prepare-commit-msg .git/hooks/
 ``` 
 
 # Start having fun 
